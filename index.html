@@ -1,46 +1,70 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Albion Black Market Flipper</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Albion Black Market Flipper</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <h1>Albion Black Market Flipper</h1>
+<h1>Albion Black Market Flipper</h1>
+
+<input
+id="search"
+type="text"
+placeholder="Cari Item..."
+>
+
+<select id="tier">
+<option value="ALL">Semua Tier</option>
+<option>T4</option>
+<option>T5</option>
+<option>T6</option>
+<option>T7</option>
+<option>T8</option>
+</select>
+
+<select id="enchant">
+<option value="ALL">Semua Enchant</option>
+<option>.0</option>
+<option>.1</option>
+<option>.2</option>
+<option>.3</option>
+<option>.4</option>
+</select>
+
 </header>
 
 <main>
-  <input type="text" placeholder="Cari item...">
 
-  <h2>High Profit</h2>
+<table>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Item</th>
-        <th>Buy</th>
-        <th>Sell</th>
-        <th>Profit</th>
-      </tr>
-    </thead>
+<thead>
 
-    <tbody id="marketTable">
-      <tr>
-        <td>T4 Soldier Boots</td>
-        <td>12,000</td>
-        <td>18,500</td>
-        <td style="color:lime;">+54%</td>
-      </tr>
-    </tbody>
+<tr>
 
-  </table>
+<th>Item</th>
+<th>Buy</th>
+<th>Sell BM</th>
+<th>Profit</th>
+
+</tr>
+
+</thead>
+
+<tbody id="marketTable">
+
+</tbody>
+
+</table>
 
 </main>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
